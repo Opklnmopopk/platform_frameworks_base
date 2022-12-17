@@ -50,25 +50,11 @@ public class PropImitationHooks {
     private static final String PROCESS_GMS_PERSISTENT = PACKAGE_GMS + ".persistent";
     private static final String PROCESS_GMS_UNSTABLE = PACKAGE_GMS + ".unstable";
 
-    private static final String PACKAGE_GPHOTOS = "com.google.android.apps.photos";
-    private static final Map<String, Object> sP1Props = new HashMap<>();
-    static {
-        sP1Props.put("BRAND", "google");
-        sP1Props.put("MANUFACTURER", "Google");
-        sP1Props.put("DEVICE", "marlin");
-        sP1Props.put("PRODUCT", "marlin");
-        sP1Props.put("MODEL", "Pixel XL");
-        sP1Props.put("FINGERPRINT", "google/marlin/marlin:10/QP1A.191005.007.A3/5972272:user/release-keys");
-    }
-    private static final String[] sFeaturesBlacklist = {
-        "PIXEL_2017_PRELOAD",
-        "PIXEL_2018_PRELOAD",
-        "PIXEL_2019_MIDYEAR_PRELOAD",
-        "PIXEL_2019_PRELOAD",
-        "PIXEL_2020_EXPERIENCE",
-        "PIXEL_2020_MIDYEAR_EXPERIENCE",
-        "PIXEL_2021_EXPERIENCE",
-        "PIXEL_2021_MIDYEAR_EXPERIENCE"
+    
+    private static final Map<String, Object> propsToChangeROG1;
+    private static final String[] packagesToChangeROG1 = {
+        "com.dts.freefireth",
+        "com.dts.freefiremax"
     };
 
     private static final String PACKAGE_ASI = "com.google.android.as";
